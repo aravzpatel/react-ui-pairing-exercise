@@ -40,6 +40,39 @@
       "submittedAt": null,
       "allInRate": 0.065,
       "brokerEmail": null
+    },
+    {
+      "id": "0d8e80ae-06f7-403a-ab67-489465746",
+      "clientName": "Compu-Global-Hyper-Mega-Net Industrials Conglomerate Limited",
+      "propertyAddress": "Main St, New York, N0 1QD",
+      "loanType": "COMMERCIAL",
+      "loanAmount": 599000,
+      "createdAt": "2022-11-14T10:43:12.633742",
+      "submittedAt": null,
+      "allInRate": 0.095,
+      "brokerEmail": null
+    },
+    {
+      "id": "DKJEJLKJ-06f7-403a-ab67-489465746",
+      "clientName": "Very small fake name with @sign",
+      "propertyAddress": "Hawkins House, New King Street, London, W1 1ST",
+      "loanType": "RESIDENTIAL",
+      "loanAmount": -50855,
+      "createdAt": "2022-11-14T10:43:12.633742",
+      "submittedAt": null,
+      "allInRate": 0.054,
+      "brokerEmail": null
+    },
+    {
+      "id": "893274983-9387493870-324987398437",
+      "clientName": "Very small fake name with % £",
+      "propertyAddress": "Hawkins House, New King Street, London, W1 1ST",
+      "loanType": "RESIDENTIAL",
+      "loanAmount": -50855,
+      "createdAt": "2022-11-14T10:43:12.633742",
+      "submittedAt": null,
+      "allInRate": 0.054,
+      "brokerEmail": null
     }
   ]
 }
