@@ -23,4 +23,9 @@ describe("Loan applications dashboard view", () => {
     screen.getByText("Count Dracula");
   });
 
+  test("Display Amount in pounds format", () => {
+    render(<App />);
+    screen.getByText("£870,000.00");
+  });
+
 });

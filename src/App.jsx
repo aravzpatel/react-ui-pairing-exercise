@@ -7,6 +7,12 @@ const App = () => {
     setLoanApplications(loanApplicationsData.data)
   }, [])
 
+const formatter = new Intl.NumberFormat('en-gb', {
+  style: 'currency',
+  currency: 'GBP',
+});
+
+
   return (
     <div className="App">
       <table>
@@ -18,7 +24,7 @@ const App = () => {
             return (
               <tr>
               <td>{item.clientName}</td>
-              <td>{item.loanAmount}</td>
+              <td>{formatter.format(item.loanAmount)}</td>
               </tr>
             ) })}
       </table>
