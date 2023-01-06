@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import loanApplicationsData from './loanApplicationsData.json'
 
 const App = () => {
@@ -9,8 +9,19 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>hello world</h1>
-      <p>{loanApplications && loanApplications[0].clientName}</p>
+      <table>
+        <tr>
+          <th>Client Details</th>
+          <th>Loan Amount</th>
+        </tr>
+          {loanApplications?.map(item => { 
+            return (
+              <tr>
+              <td>{item.clientName}</td>
+              <td>{item.loanAmount}</td>
+              </tr>
+            ) })}
+      </table>
     </div>
   );
 };
