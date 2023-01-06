@@ -39,8 +39,7 @@ Run the tests in watch-mode by running:
 yarn test
 ```
 
-## Notes
+## Instructions
 * All code should be written test-first (TDD)
-* The candidate can Google things or ask for help
-* The candidate can install libraries to help complete the exercise
-* The `main` branch should be kept clean
+* We want to limit the first page to only 4 visible rows
+* Any data after the first 4 should be accessed via clicking a button
