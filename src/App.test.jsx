@@ -28,4 +28,11 @@ describe("Loan applications dashboard view", () => {
     screen.getByText("£870,000.00");
   });
 
+  test("Display Status in correct background colour", () => {
+    render(<App />);
+    screen.getByText("Submitted");
+    const status = screen.getByTestId('loan-status-1')
+    expect(status.toHaveStyle('background-color: yellow'))
+  });
+
 });
