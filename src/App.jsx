@@ -7,6 +7,12 @@ const App = () => {
     setLoanApplications(loanApplicationsData.data)
   }, [])
 
+  const [numRowsVisible, setNumRowsVisible] = useState(4);
+
+  const handleClick = () => {
+    setNumRowsVisible(loanApplications.length)
+  }
+
   return (
     <div className="App">
         {loanApplications &&
@@ -34,7 +40,7 @@ const App = () => {
               Status
             </th>
           </tr>
-          {loanApplications.slice(0,4).map((item) => {
+          {loanApplications.slice(0,numRowsVisible).map((item) => {
             return (
               <tr data-testid={`${item.clientName} row`}>
               <td>
@@ -62,6 +68,7 @@ const App = () => {
             )
           })}
         </table>}
+        <button onClick={handleClick}>Expand rows +</button>
     </div>
   );
 };

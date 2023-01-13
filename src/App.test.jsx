@@ -1,5 +1,5 @@
 import { describe, test } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import { within } from "@testing-library/react";
 import App from "./App.jsx";
 
@@ -31,4 +31,18 @@ describe("Loan applications dashboard view", () => {
     expect(tableChildren.length).toBe(5)
 
   })
+
+  test('more rows are visible after clicking a button', async () => {
+    render(<App/>);
+    const button = screen.getByRole('button');
+    await fireEvent(button, new MouseEvent('click'))
+    const table = screen.getByRole('table');
+    const tableChildren = within(table).getAllByRole('row')
+    expect(tableChildren.length).toBeGreaterThan(5);
+
+
+
+  })
+
+
 });
