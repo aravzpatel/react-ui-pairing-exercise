@@ -34,7 +34,7 @@ const App = () => {
               Status
             </th>
           </tr>
-          {loanApplications.map((item) => {
+          {loanApplications.slice(0,4).map((item) => {
             return (
               <tr data-testid={`${item.clientName} row`}>
               <td>

@@ -23,4 +23,12 @@ describe("Loan applications dashboard view", () => {
     within(DaffyDuckRow).getByText('£870,000')
     within(DaffyDuckRow).getByText('2022-11-16')
   });
+
+  test('displays only 4 rows in the table', () => {
+    render(<App/>);
+    const table = screen.getByRole('table');
+    const tableChildren = within(table).getAllByRole('row')
+    expect(tableChildren.length).toBe(5)
+
+  })
 });
