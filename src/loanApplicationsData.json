@@ -16,7 +16,7 @@
       "propertyAddress": "65 Rowlands Rd, West Sussex, BN11 3JN",
       "loanType": "COMMERCIAL",
       "loanAmount": 870000,
-      "createdAt": "2022-11-15T09:27:27.986370",
+      "createdAt": "2022-11-16T09:27:27.986370",
       "submittedAt": "2022-11-15T10:42:41.356266",
       "allInRate": 0.054
     },
@@ -25,17 +25,17 @@
       "clientName": "Michael Jordan",
       "propertyAddress": "41 Lothian St, Edinburgh, EH1 1HB",
       "loanType": "RESIDENTIAL",
-      "loanAmount": 500000,
+      "loanAmount": 200000,
       "createdAt": "2022-11-14T11:30:55.458796",
       "submittedAt": null,
-      "allInRate": 0.072
+      "allInRate": 0.066
     },
     {
       "id": "0d8e80ae-06f7-403a-ab67-8ca756797ccf",
       "clientName": "Count Dracula",
       "propertyAddress": "Bridge St, Dyfed, SY23 1QD",
       "loanType": "RESIDENTIAL",
-      "loanAmount": 500000,
+      "loanAmount": 500300,
       "createdAt": "2022-11-14T10:43:12.633742",
       "submittedAt": null,
       "allInRate": 0.065,
@@ -71,7 +71,7 @@
       "loanAmount": -50855,
       "createdAt": "2022-11-14T10:43:12.633742",
       "submittedAt": null,
-      "allInRate": 0.054,
+      "allInRate": 0.059,
       "brokerEmail": null
     }
   ]
