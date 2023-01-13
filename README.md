@@ -1,10 +1,6 @@
 # React UI pairing exercise
 
-This is a pairing exercise for prospective software engineers.
-
 The aim is to create a responsive table similar to the screenshot in [`dashboard.png`](dashboard.png).
-
-The candidate can guide the exercise and do as much as is feasible within the time limit (~40-45 minutes).
 
 ## System prerequisites
 
@@ -43,3 +39,4 @@ yarn test
 * All code should be written test-first (TDD)
 * We want to limit the first page to only 4 visible rows
 * Any data after the first 4 should be accessed via clicking a button
+* Goal is to have the smallest amount of code with complete tests
