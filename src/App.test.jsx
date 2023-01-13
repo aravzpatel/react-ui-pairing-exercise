@@ -1,5 +1,6 @@
 import { describe, test } from "vitest";
 import { render, screen } from "@testing-library/react";
+import { within } from "@testing-library/react";
 import App from "./App.jsx";
 
 describe("Loan applications dashboard view", () => {
@@ -14,11 +15,12 @@ describe("Loan applications dashboard view", () => {
 
   test("displays the second loan application data", () => {
     render(<App />);
-    screen.getByText("Daffy Duck");
-    screen.getByText('65 Rowlands Rd, West Sussex, BN11 3JN')
-    screen.getByText('COMMERCIAL')
-    screen.getByText('5.4%')
-    screen.getByText('£870,000')
-    screen.getByText('2022-11-16')
+    const DaffyDuckRow = screen.getByTestId('Daffy Duck row');
+    within(DaffyDuckRow).getByText("Daffy Duck");
+    within(DaffyDuckRow).getByText('65 Rowlands Rd, West Sussex, BN11 3JN')
+    within(DaffyDuckRow).getByText('COMMERCIAL')
+    within(DaffyDuckRow).getByText('5.4%')
+    within(DaffyDuckRow).getByText('£870,000')
+    within(DaffyDuckRow).getByText('2022-11-16')
   });
 });
